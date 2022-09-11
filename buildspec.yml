@@ -6,8 +6,9 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
-      - systemctl start docker
-      - systemctl status docker
+      - id
+      - sudo systemctl start docker
+      - sudo systemctl status docker
       - docker version
       - aws ecr get-login-password --region $AWS_DEFAULT_REGION 
       - REPOSITORY_URI=842822433843.dkr.ecr.ap-south-1.amazonaws.com/firstprivaterepo
