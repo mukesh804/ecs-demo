@@ -5,8 +5,8 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws --version
-      - id
+      - aws --version 
+      - yum install docker* -y
       - sudo systemctl start docker
       - sudo systemctl status docker
       - docker version
